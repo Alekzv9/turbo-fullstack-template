@@ -1,0 +1,30 @@
+{
+  "name": "turbo-basic-template",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "--- Database Scripts ---": "",
+    "db:generate": "pnpm --filter @my-app/db db:generate",
+    "db:migrate": "pnpm --filter @my-app/db db:migrate",
+    "db:studio": "pnpm --filter @my-app/db db:studio",
+    "db:push": "pnpm --filter @my-app/db db:push",
+    "--- API Specific Scripts ---": "",
+    "api:dev": "pnpm --filter @my-app/api dev",
+    "--- Pos Specific Scripts ---": "",
+    "pos:dev": "pnpm --filter @my-app/pos dev",
+    "pos:build": "pnpm --filter @my-app/pos build"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.0",
+    "turbo": "^2.5.4",
+    "typescript": "5.8.2"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
