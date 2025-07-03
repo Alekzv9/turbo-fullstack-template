@@ -4,6 +4,7 @@
  
 ```
 git clone <repository_url> <desired_folder_name>
+git remote set-url origin <new_repository_url>
 ```
 
 Apps
