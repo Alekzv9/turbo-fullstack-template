@@ -1,5 +1,11 @@
 # Turbo FullStack Template
 
+ ## clone
+ 
+```
+git clone <repository_url> <desired_folder_name>
+```
+
 Apps
 
 - pos: react vite app create by doing

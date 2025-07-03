@@ -16,7 +16,6 @@ This package provides:
 - `db:push` - Push schema changes to database 
 - `db:migrate` - Create and run migrations
 - `db:studio` - Open Prisma Studio
-- `db:migrate-turso` - Migrate to Turso database
 
 ### Import in other packages
 
