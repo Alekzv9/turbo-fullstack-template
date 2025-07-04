@@ -1,11 +1,18 @@
 {
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
+  "globalDependencies": [".env*"],
   "tasks": {
     "build": {
       "dependsOn": ["^build", "db:generate"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"],
+      "env": ["DATABASE_URL", "VITE_API_URL"]
+    },
+    "api:build": {
+      "dependsOn": ["^build", "db:generate"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": ["dist/**"],
       "env": ["DATABASE_URL"]
     },
     "lint": {

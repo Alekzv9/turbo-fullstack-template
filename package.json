@@ -14,9 +14,11 @@
     "db:push": "pnpm --filter @my-app/db db:push",
     "--- API Specific Scripts ---": "",
     "api:dev": "pnpm --filter @my-app/api dev",
+    "api:build": "turbo run api:build --filter=@my-app/api",
+    "api:start": "pnpm --filter @my-app/api start",
     "--- Pos Specific Scripts ---": "",
     "pos:dev": "pnpm --filter @my-app/pos dev",
-    "pos:build": "pnpm --filter @my-app/pos build"
+    "pos:build": "turbo run build --filter=@my-app/pos"
   },
   "devDependencies": {
     "prettier": "^3.6.0",

@@ -1,6 +1,13 @@
-import type { User } from '@my-app/api-types';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import type { Role } from '~/api/types';
+
+type User = {
+  id: string;
+  email: string;
+  role: Role;
+  name: string | null;
+};
 
 interface AuthState {
   token: string | null;
